@@ -51,13 +51,13 @@ graph TD
         I_Map --> C_Hashtable[Hashtable]
     end
 
-    style I_Collection fill:#dae8fc,stroke:#333,stroke-width:2px
-    style I_Map fill:#dae8fc,stroke:#333,stroke-width:2px
-    style I_List fill:#d5e8d4,stroke:#333,stroke-width:2px
-    style I_Set fill:#d5e8d4,stroke:#333,stroke-width:2px
-    style I_Queue fill:#d5e8d4,stroke:#333,stroke-width:2px
-    style I_Deque fill:#d5e8d4,stroke:#333,stroke-width:2px
-    style C_LinkedList fill:#fff2cc,stroke:#333,stroke-width:2px
+    style I_Collection stroke:#333,stroke-width:2px
+    style I_Map stroke:#333,stroke-width:2px
+    style I_List stroke:#333,stroke-width:2px
+    style I_Set stroke:#333,stroke-width:2px
+    style I_Queue stroke:#333,stroke-width:2px
+    style I_Deque stroke:#333,stroke-width:2px
+    style C_LinkedList stroke:#333,stroke-width:2px
 ```
 
 ---
