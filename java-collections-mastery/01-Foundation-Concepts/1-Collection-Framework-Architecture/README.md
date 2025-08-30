@@ -22,12 +22,13 @@ Kindha unna diagram chudu, neeku clear ga ardham avtundi.
 ```mermaid
 graph TD
     subgraph Collection Hierarchy
-        I_Collection((Collection)) --> I_List((List))
-        I_Collection --> I_Set((Set))
-        I_Collection --> I_Queue((Queue))
+        %% Interfaces
+        I_Collection([Collection]) --> I_List([List])
+        I_Collection --> I_Set([Set])
+        I_Collection --> I_Queue([Queue])
+        I_Queue --> I_Deque([Deque])
 
-        I_Queue --> I_Deque((Deque))
-
+        %% Classes
         I_List --> C_ArrayList[ArrayList]
         I_List --> C_Vector[Vector]
         C_Vector --> C_Stack[Stack]
@@ -45,19 +46,23 @@ graph TD
     end
 
     subgraph Map Hierarchy
-        I_Map((Map)) --> C_HashMap[HashMap]
+        %% Interface
+        I_Map([Map])
+
+        %% Classes
+        I_Map --> C_HashMap[HashMap]
         I_Map --> C_LinkedHashMap[LinkedHashMap]
         I_Map --> C_TreeMap[TreeMap]
         I_Map --> C_Hashtable[Hashtable]
     end
 
-    style I_Collection stroke:#333,stroke-width:2px
-    style I_Map stroke:#333,stroke-width:2px
-    style I_List stroke:#333,stroke-width:2px
-    style I_Set stroke:#333,stroke-width:2px
-    style I_Queue stroke:#333,stroke-width:2px
-    style I_Deque stroke:#333,stroke-width:2px
-    style C_LinkedList stroke:#333,stroke-width:2px
+    %% Styling
+    style I_Collection stroke-width:4px,stroke:#4466ff
+    style I_Map stroke-width:4px,stroke:#4466ff
+    style I_List stroke-width:2px,stroke:#4466ff
+    style I_Set stroke-width:2px,stroke:#4466ff
+    style I_Queue stroke-width:2px,stroke:#4466ff
+    style I_Deque stroke-width:2px,stroke:#4466ff
 ```
 
 ---
